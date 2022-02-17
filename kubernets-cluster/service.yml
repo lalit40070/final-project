@@ -1,12 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: my-nginx-svc
+  name: my-app-service
   labels:
-    app: nginx
+    app: my-java-app
 spec:
   type: LoadBalancer
-  ports:
-  - port: 80
   selector:
-    app: nginx
+    app: my-java-app
+  ports:
+    - port: 80
+      targetPort: 8080
