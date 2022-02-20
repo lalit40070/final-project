@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: my-java-app
-          image: 226100319488.dkr.ecr.ap-south-1.amazonaws.com/dockerrepo:6
+          image: 643141644136.dkr.ecr.ap-southeast-1.amazonaws.com/dockerrepo:2
           ports:
             - containerPort: 80
